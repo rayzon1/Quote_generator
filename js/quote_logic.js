@@ -1,19 +1,22 @@
 // random variable
-let random = Math.floor(Math.random() * quotes.length);
-let message = '';
 
+
+let message = '';
 // this function 
-function print(message) {
-    var outputDiv = document.getElementById("output");
-    outputDiv.innerHTML = message;
+function print(text) {
+    let outputDiv = document.getElementById("output");
+    outputDiv.innerHTML = text;
   }
 
-function printQuote(number){
-    var quoteSection = quotes[number];
-    message += '<p>' + quoteSection['quote'] + '</p>';
+// print quote function
+function printQuote(){
+    let random = Math.floor(Math.random() * quotes.length);
+    let quoteSection = quotes[random];
+    message = '<p>' + quoteSection['quote'] + '</p>';
     message += '<p>' + quoteSection['source'] + '</p>';
+    return message;
 }
 
-
-printQuote(random)
-print(message);
+function main(){
+    print(printQuote());
+}

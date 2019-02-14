@@ -1,0 +1,14 @@
+#title {
+    text-align: center;
+    color: fuchsia;
+}
+
+#output {
+    height: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+#click {
+    text-align: center;
+}

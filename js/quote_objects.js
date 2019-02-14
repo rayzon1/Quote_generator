@@ -4,7 +4,7 @@ let quotes = [{
     source: '– Confucius'
 },
 {
-    quote: 'Everything you\’ve ever wanted is on the other side of fear.',
+    quote: 'Everything you’ve ever wanted is on the other side of fear.',
     source: '— George Addair'
 },
 {
@@ -34,6 +34,22 @@ let quotes = [{
 {
     quote: 'Hard times don’t create heroes. It is during the hard times when the ‘hero’ within us is revealed.',
     source: '– Bob Riley'
+},
+{
+    quote: 'Believe you can and you’re halfway there.',
+    source: '— Theodore Roosevelt'
+},
+{
+    quote: ' Start by doing what’s necessary; then do what’s possible; and suddenly you are doing the impossible',
+    source: '– Francis of Assisi'
+},
+{
+    quote: ' I attribute my success to this: I never gave or took any excuse. ',
+    source: '– Florence Nightingale'
+},
+{
+    quote: ' Strength does not come from physical capacity. It comes from an indomitable will. ',
+    source: '– Mahatma Gandhi'
 }
 ]
 
