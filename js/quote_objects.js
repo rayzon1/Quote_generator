@@ -1,4 +1,4 @@
-// js  array of objects
+// My array of objects with well known quotes, keeping it simple with only the quote itself and the source
 let quotes = [{
     quote: 'It does not matter how slowly you go as long as you do not stop.',
     source: '– Confucius'
