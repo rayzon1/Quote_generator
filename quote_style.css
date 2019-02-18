@@ -49,12 +49,13 @@ button {
     text-decoration: none;
     font-family: ZCOOL QingKe HuangYou, cursive;
     border: none;
+    background-color: rgba(0, 128, 0, 0.4);
 
 }
 
 button:hover {
-    background-color: grey;
-    transform: scale(1.2) rotate(360deg);
+    background-color: green;
+    transform: scale(1.3) rotate(360deg);
 }
 
 
