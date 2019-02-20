@@ -3,30 +3,29 @@ let message = '';
 
 // function will print the text to the html page
 const printQuote = (text) => {
+    message = `<p class="quote1"> ${text['quote']} </p>`;
+    message += `<p class="quote2"> ${text['source']} </p>`;
     let outputDiv = document.getElementById("output");
-    outputDiv.innerHTML = text;
+    outputDiv.innerHTML = message;
   }
+
 
 // function will get a random quote, store it in string message then return the message
 const getRandomQuote = () => {
     let random = Math.floor(Math.random() * quotes.length);
     let quoteSection = quotes[random];
-    message = `<h1 id="quote1"> ${quoteSection['quote']} </h1>`;
-    message += `<h2 id="quote2"> ${quoteSection['source']} </h1>`;
-    return message;
+    return quoteSection;
 }
 
 // function will return a random number between 1 - 255
 const getRandomColor = () => {
-    let random = Math.floor(Math.random() * 255);
-    return random;
+    let random1 = Math.floor(Math.random() * 255);
+    return random1;
 }
 
 // function will apply color and background styles using rgb color values
 const printRandomColor = (a, b, c) => {
     document.getElementById("button").style.background = `rgba(${a}, ${b}, ${c}, 0.4)`;
-    document.getElementById("quote1").style.color = `rgb(${a}, ${b}, ${c})`;
-    document.getElementById("quote2").style.color = `rgb(${a}, ${b}, ${c})`;
 }
 
 // this function scales back the transform property in CSS
@@ -40,7 +39,7 @@ const main = () => {
     color1 = getRandomColor();
     color2 = getRandomColor();
     printQuote(getRandomQuote());
-    printRandomColor(color, color1, color2);
     buttonConfig();
+    printRandomColor(color, color1, color2);
     
 }
