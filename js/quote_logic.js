@@ -1,6 +1,6 @@
 // message variable will hold the string containing the quote and source.
 let message = '';
-
+let previousQuote = [];
 // function will print the text to the html page
 const printQuote = (text) => {
     message = `<p class="quote1"> ${text['quote']} </p>`;
@@ -11,9 +11,21 @@ const printQuote = (text) => {
 
 
 // function will get a random quote, store it in string message then return the message
+/*
+    I really tried my best with this function to make it so that it will not repeat any 
+    quotes until all of the quotes from the array has been exhausted. I believe it works 
+    after testing.
+*/
 const getRandomQuote = () => {
     let random = Math.floor(Math.random() * quotes.length);
     let quoteSection = quotes[random];
+    let a = quotes.splice(random, 1);
+    previousQuote.push(a[0]);
+    if (quotes.length < 1){
+        for(let i = 0; i < previousQuote.length; i ++){
+            quotes.push(previousQuote[i]);
+        }
+    }
     return quoteSection;
 }
 
