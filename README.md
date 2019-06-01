@@ -1,4 +1,4 @@
-# Quote_generator
+# A Simple Quote Generator
 Quote generator project.
 by. Gerardo Keys
 
