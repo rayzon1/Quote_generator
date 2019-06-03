@@ -9,9 +9,16 @@
     height: 125px;
     padding-top: 50px;
 }
-
+h1 {
+    
+    text-align: center;
+    font-size: 56px;
+    padding-top: 10%;
+    color:  rgb(24, 79, 104)
+    
+}
 .container {
-    height: 1000px;
+    height: 1080px;
     background-color: hsl(56, 49%, 72%);
 }
 
